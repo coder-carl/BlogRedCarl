@@ -1,0 +1,100 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <title>RedCarl 个人博客,记录学习,记录生活~</title>
+  <link rel="icon" href="images/LOGO32.png" />
+
+  <link rel="stylesheet" href="css/body.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/banner-A.css" />
+  <link rel="stylesheet" href="css/banner-B.css" />
+  
+</head>
+
+<body>
+<!--背景特效-->
+<script type="text/javascript" src="js/bg.js"></script>
+<!--页头-->
+<div class="nav">
+	<img src="images/LOGO64.png" />
+</div>
+
+<!--banner 第一板块 推广板块-->
+<div class="banner">
+	<!--banner-A-推广-->
+	<div id="banner-a">
+		
+	</div>
+	<!--banner-B-信息-->
+	<div class="banner-b">
+		<div class="box">
+			<img src="images/a.jpg" />
+			<p class="name">RedCarl</p>
+			<p class="font">性别:&nbsp;男&nbsp;&nbsp;&nbsp;星座:&nbsp;魔羯座&nbsp;&nbsp;&nbsp;年龄:&nbsp;<span id="years"></span></p>
+		</div>
+		<hr />
+	</div>
+
+	<!--banner-C-信息-->
+	<div class="banner-c">
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--页尾-->
+<div class="footer">
+	<div class="footer-p">
+			<p>Copyright © 2019 Carl All Rights Reserved.</p>
+			<p>本站已运行: <span id="site_runtime"></span></p>
+	</div>
+</div>
+
+
+
+
+<!--年龄计算-->
+<script>
+	function mytime(){
+	d = new Date();
+ 	var nowYear = d.getFullYear()
+ 	var nowMonth = d.getMonth() + 1
+ 	var nowDay = d.getDate()
+	var ye = nowYear-2003;
+	document.getElementById("years").innerHTML = ye;
+}
+setInterval(function() {mytime()},1000);
+</script>
+<!--时间记录-->
+<script type="text/javascript">
+    function show_site_runtime(){
+	window.setTimeout("show_site_runtime()",1000); // 每秒运行一次函数
+	X=new Date("01/19/2019 12:00:00"); //在这里修改你的建站时间
+	Y=new Date();
+	T=(Y.getTime()-X.getTime()); // 获取当前时间与指定时间之间的时间间隔（ms）	
+	i=24*60*60*1000;
+	d=T/i;
+	D=Math.floor(d); // 计算天数并向下取整
+	h=(d-D)*24;
+	H=Math.floor(h); // 计算剩余不足一天的小时数并向下取整
+	m=(h-H)*60;
+	M=Math.floor(m); // 计算剩余不足一小时的分钟数并向下取整
+	s=(m-M)*60
+	S=Math.floor(s); // 计算剩余不足一分钟的秒数并向下取整
+	site_runtime.innerHTML= D + " 天 " + H + " 小时 " + M + " 分 " + S + " 秒 "
+    }
+	show_site_runtime();
+</script>
+</body>
+</html>

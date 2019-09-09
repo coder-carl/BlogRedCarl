@@ -1,0 +1,31 @@
+#banner-a {
+    height: 300px;
+    animation: banner-a 15s linear infinite; /*动画效果：10s 无限循环*/
+}
+@keyframes banner-a {
+    0%{
+    background: url(../images/banner-a/7.jpg)no-repeat; /* 图1*/
+    background-size: 750px 300px;
+    }
+    20%{
+       background: url(../images/banner-a/6.jpg)no-repeat; /*图2*/
+       background-size: 750px 300px;
+    }
+    40%{
+        background: url(../images/banner-a/3.jpg)no-repeat; /*图3*/
+        background-size: 750px 300px;
+    }
+    60%{
+        background: url(../images/banner-a/4.jpg)no-repeat;
+        background-size: 750px 300px;
+    }
+    80%{
+        background: url(../images/banner-a/5.jpg)no-repeat;
+        background-size: 750px 300px;
+    }
+    100%{
+        background: url(../images/banner-a/7.jpg)no-repeat;
+        background-size: 750px 300px;
+    }
+
+}

@@ -1,0 +1,51 @@
+.box{
+    width: 355px;
+    height: 100px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+}
+.box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-size: 100px 100px;
+    display: block;
+}
+.name{
+    font-size: 3em;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 144px;
+}
+.font{
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 66px;
+    left: 120px;
+}
+hr{
+    width: 385px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+
+/*头像旋转代码*/
+.box img:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+}
+.box img{
+    display: block;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    border-radius:100%;
+}

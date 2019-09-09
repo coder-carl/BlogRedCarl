@@ -1,0 +1,19 @@
+.ad{
+    width: 330px;
+    height: 458px;
+    background: url(../images/ad/VPS.png)no-repeat;
+    position: fixed;
+    top: 100px;
+    left: 0px;
+}
+@media all and (max-width:1860px){
+    .ad{
+        width: 330px;
+        height: 458px;
+        background: url(../images/ad/VPS.png)no-repeat;
+        position: fixed;
+        top: 100px;
+        left: 0px;
+        display: none;
+    } 
+}

@@ -49,3 +49,52 @@ hr{
     -o-transition: all 0.5s ease-in-out;
     border-radius:100%;
 }
+
+
+
+/*下部图标*/
+.button{
+    position: absolute;
+    bottom: 0px;
+    width: 430px;
+    height: 70px;
+    /*background: red;*/
+    text-align: center;
+}
+.button a{
+    display: inline-block;
+    
+    margin: 18px 10px 18px 10px;
+
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+    background: blue;
+    
+    transition: all .5s;
+}
+.button a:hover{
+    transform: scale(1.1)rotate(360deg);
+    -webkit-transform: scale(1.1)rotate(360deg);
+    -moz-transform: scale(1.1)rotate(360deg);
+    -o-transform: scale(1.1)rotate(360deg);
+    -ms-transform: scale(1.1)rotate(360deg);
+    
+    box-shadow: 0px 0px 8px black;
+}
+.button #email{
+    background: url(../images/email.png)no-repeat;
+    background-size: 48px 48px;
+}
+.button #qq{
+    background: url(../images/qq.png)no-repeat;
+    background-size: 48px 48px;
+}
+.button #phone{
+    background: url(../images/phone.png)no-repeat;
+    background-size: 48px 48px;
+}
+.button #payply{
+    background: url(../images/paypal.png)no-repeat;
+    background-size: 48px 48px;
+}

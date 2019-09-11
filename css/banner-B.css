@@ -55,16 +55,16 @@ hr{
 /*下部图标*/
 .button{
     position: absolute;
-    bottom: 0px;
+    bottom: 7px;
     width: 430px;
-    height: 70px;
+    height: 48px;
     /*background: red;*/
     text-align: center;
 }
 .button a{
     display: inline-block;
     
-    margin: 18px 10px 18px 10px;
+    margin: 0px 10px 0px 10px;
 
     border-radius: 100%;
     width: 48px;
